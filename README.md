@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Stock App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application for viewing stock data.
 
-## Available Scripts
+## Setup Instructions
 
-In the project directory, you can run:
+1. **Clone the repository to your local machine.**
 
-### `npm start`
+    ```bash
+    git clone https://github.com/Matthew-Shill/stockapp-react.git
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Navigate to the project directory.**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    ```bash
+    cd stockapp-react
+    ```
 
-### `npm test`
+3. **Install the project dependencies.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run build`
+    This will install the following dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - `@heroicons/react`: A set of SVG icons for React.
+    - `@testing-library/jest-dom`: Custom jest matchers to test the state of the DOM.
+    - `@testing-library/react`: Simple and complete React DOM testing utilities.
+    - `@testing-library/user-event`: Simulate user events for testing.
+    - `react`: The React library.
+    - `react-dom`: React package for working with the DOM.
+    - `react-scripts`: Scripts and configuration used by Create React App.
+    - `recharts`: A composable charting library built on React components.
+    - `web-vitals`: A library for measuring Web Vitals.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Obtain API keys from Alpha Vantage and Finnhub:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - For Alpha Vantage:
+        - Visit [https://www.alphavantage.co/support/#api-key](https://www.alphavantage.co/support/#api-key)
+        - Click on "Get your free API key".
+        - Fill out the form and click "Get Free API Key".
+        - Your API key will be displayed on the next page.
 
-### `npm run eject`
+    - For Finnhub:
+        - Visit [https://finnhub.io/register](https://finnhub.io/register)
+        - Fill out the form and click "Get free API Key".
+        - Check your email for the API key.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Create a `.env` file in the root of the project directory and add your API keys:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    REACT_APP_ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key
+    REACT_APP_FINNHUB_API_KEY=your_finnhub_api_key
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. **Start the project.**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm start
+    ```
 
-## Learn More
+    The application should now be running at `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Replace `your_alpha_vantage_api_key` and `your_finnhub_api_key` with the actual API keys you obtained.
